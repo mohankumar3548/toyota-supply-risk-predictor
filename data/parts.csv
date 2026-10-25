@@ -1,0 +1,19 @@
+part_id,part,suppliers,lines,daily_usage
+PT1,Semiconductors,S104,Line 2|Line 3,955
+PT2,Wire harness,S108|S117,Line 1|Line 4,1254
+PT3,Seats,S115|S128,Line 1,2317
+PT4,Brake systems,S122,Line 2|Line 3|Line 4,839
+PT5,Glass,S129,Line 2|Line 3,2188
+PT6,Steel coil,S106|S101,Line 1,881
+PT7,Batteries,S120,Line 1|Line 3|Line 4,1452
+PT8,Tyres,S120|S123,Line 4,843
+PT9,Airbags,S127|S104,Line 1|Line 3,2140
+PT10,Infotainment,S104,Line 1|Line 2,2099
+PT11,Castings,S111|S126,Line 1|Line 2|Line 3|Line 4,1100
+PT12,Plastics,S118,Line 2|Line 3,992
+PT13,Paint,S125|S118,Line 1,1504
+PT14,Sensors,S102|S129,Line 1|Line 2|Line 3|Line 4,1635
+PT15,Bearings,S109|S110,Line 1|Line 2|Line 3,1903
+PT16,Electronics ECU,S116|S121,Line 2|Line 4,1328
+PT17,Lighting,S123,Line 3|Line 4,1198
+PT18,Exhaust,S130|S113,Line 4,1264

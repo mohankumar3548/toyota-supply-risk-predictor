@@ -1,0 +1,313 @@
+{
+  "title": "Toyota Supplier Early Warning",
+  "company": "Toyota Motor Corporation",
+  "kpis": [
+    {
+      "label": "Suppliers on alert",
+      "value": "4",
+      "note": "Score >= 60"
+    },
+    {
+      "label": "Top risk",
+      "value": "Pacific Precision",
+      "note": "100/100, Semiconductors (single), Airbags, Infotainment (single)"
+    },
+    {
+      "label": "Single-source parts",
+      "value": "7",
+      "note": "of 18 parts"
+    },
+    {
+      "label": "Vehicles at risk",
+      "value": "27,550",
+      "note": "Parts short beyond 5 days of safety stock"
+    }
+  ],
+  "algorithm": [
+    {
+      "step": "Collect supply data",
+      "output": "30 suppliers, 18 parts, 52 weeks of deliveries"
+    },
+    {
+      "step": "Supplier reliability",
+      "output": "Average on-time (12 wks) 87%"
+    },
+    {
+      "step": "Forecast lead times",
+      "output": "Biggest forecast rise: Pacific Precision +17.0 days"
+    },
+    {
+      "step": "Early anomaly detection",
+      "output": "4 suppliers drifting (z > 2)"
+    },
+    {
+      "step": "News risk scan",
+      "output": "5 risk headlines found"
+    },
+    {
+      "step": "Network impact",
+      "output": "7 single-source parts"
+    },
+    {
+      "step": "Composite risk score",
+      "output": "4 suppliers above 60"
+    },
+    {
+      "step": "Mitigation plan",
+      "output": "4 mitigation actions"
+    }
+  ],
+  "tables": {
+    "Mitigation plan": [
+      {
+        "supplier": "Pacific Precision",
+        "region": "Taiwan",
+        "risk_score": 100,
+        "lead_time_baseline": 25.6,
+        "lead_time_recent": 35.9,
+        "forecast_4wk": 42.7,
+        "drift_z": 8.3,
+        "on_time_12wk": 0.17,
+        "news_points": 32.0,
+        "parts": "Semiconductors (single), Airbags, Infotainment (single)",
+        "lines": "Line 1, Line 2, Line 3",
+        "urgency": "Critical",
+        "action": "Qualify a backup supplier now and air-freight the gap"
+      },
+      {
+        "supplier": "Tera Industries",
+        "region": "Malaysia",
+        "risk_score": 100,
+        "lead_time_baseline": 16.9,
+        "lead_time_recent": 23.8,
+        "forecast_4wk": 25.0,
+        "drift_z": 6.0,
+        "on_time_12wk": 0.17,
+        "news_points": 40.0,
+        "parts": "Batteries (single), Tyres",
+        "lines": "Line 1, Line 3, Line 4",
+        "urgency": "Critical",
+        "action": "Qualify a backup supplier now and air-freight the gap"
+      },
+      {
+        "supplier": "Nordic Systems",
+        "region": "India",
+        "risk_score": 71,
+        "lead_time_baseline": 16.7,
+        "lead_time_recent": 20.0,
+        "forecast_4wk": 23.6,
+        "drift_z": 3.5,
+        "on_time_12wk": 0.58,
+        "news_points": 22.0,
+        "parts": "None",
+        "lines": "",
+        "urgency": "High",
+        "action": "Raise safety stock to 9 days"
+      },
+      {
+        "supplier": "Delta Components",
+        "region": "Malaysia",
+        "risk_score": 67,
+        "lead_time_baseline": 21.7,
+        "lead_time_recent": 24.6,
+        "forecast_4wk": 26.2,
+        "drift_z": 2.8,
+        "on_time_12wk": 0.42,
+        "news_points": 25.0,
+        "parts": "Paint",
+        "lines": "Line 1",
+        "urgency": "High",
+        "action": "Visit supplier and confirm recovery plan"
+      },
+      {
+        "supplier": "Nordic Precision",
+        "region": "China",
+        "risk_score": 30,
+        "lead_time_baseline": 7.9,
+        "lead_time_recent": 8.2,
+        "forecast_4wk": 7.3,
+        "drift_z": 0.2,
+        "on_time_12wk": 0.83,
+        "news_points": 0.0,
+        "parts": "Brake systems (single)",
+        "lines": "Line 2, Line 3, Line 4",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      },
+      {
+        "supplier": "Aki Tech",
+        "region": "Mexico",
+        "risk_score": 26,
+        "lead_time_baseline": 9.5,
+        "lead_time_recent": 10.7,
+        "forecast_4wk": 12.3,
+        "drift_z": 1.0,
+        "on_time_12wk": 0.83,
+        "news_points": 0.0,
+        "parts": "Electronics ECU",
+        "lines": "Line 2, Line 4",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      },
+      {
+        "supplier": "Siam Tech",
+        "region": "USA",
+        "risk_score": 25,
+        "lead_time_baseline": 6.4,
+        "lead_time_recent": 6.7,
+        "forecast_4wk": 6.2,
+        "drift_z": 0.4,
+        "on_time_12wk": 0.75,
+        "news_points": 0.0,
+        "parts": "None",
+        "lines": "",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      },
+      {
+        "supplier": "Kanto Industries",
+        "region": "USA",
+        "risk_score": 25,
+        "lead_time_baseline": 15.9,
+        "lead_time_recent": 16.2,
+        "forecast_4wk": 16.7,
+        "drift_z": 0.3,
+        "on_time_12wk": 0.83,
+        "news_points": 0.0,
+        "parts": "Castings",
+        "lines": "Line 1, Line 2, Line 3, Line 4",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      },
+      {
+        "supplier": "Hoshi Works",
+        "region": "Mexico",
+        "risk_score": 24,
+        "lead_time_baseline": 12.6,
+        "lead_time_recent": 12.8,
+        "forecast_4wk": 12.7,
+        "drift_z": 0.3,
+        "on_time_12wk": 1.0,
+        "news_points": 0.0,
+        "parts": "Glass (single), Sensors",
+        "lines": "Line 1, Line 2, Line 3, Line 4",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      },
+      {
+        "supplier": "Siam Components",
+        "region": "USA",
+        "risk_score": 22,
+        "lead_time_baseline": 6.3,
+        "lead_time_recent": 6.0,
+        "forecast_4wk": 5.5,
+        "drift_z": -0.2,
+        "on_time_12wk": 0.83,
+        "news_points": 0.0,
+        "parts": "Exhaust",
+        "lines": "Line 4",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      },
+      {
+        "supplier": "Kanto Precision",
+        "region": "Malaysia",
+        "risk_score": 21,
+        "lead_time_baseline": 23.4,
+        "lead_time_recent": 24.8,
+        "forecast_4wk": 25.3,
+        "drift_z": 1.0,
+        "on_time_12wk": 0.83,
+        "news_points": 0.0,
+        "parts": "Electronics ECU",
+        "lines": "Line 2, Line 4",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      },
+      {
+        "supplier": "Orion Systems",
+        "region": "Thailand",
+        "risk_score": 20,
+        "lead_time_baseline": 13.1,
+        "lead_time_recent": 13.5,
+        "forecast_4wk": 13.9,
+        "drift_z": 0.3,
+        "on_time_12wk": 1.0,
+        "news_points": 0.0,
+        "parts": "Plastics (single), Paint",
+        "lines": "Line 1, Line 2, Line 3",
+        "urgency": "Watch",
+        "action": "Monitor weekly"
+      }
+    ],
+    "News signals": [
+      {
+        "supplier": "Pacific Precision",
+        "headline": "Drought cuts water supply to Taiwan chip fabs, output may slow",
+        "risk_points": 18
+      },
+      {
+        "supplier": "Pacific Precision",
+        "headline": "Foundry capacity sold out through next year amid AI demand",
+        "risk_points": 14
+      },
+      {
+        "supplier": "Tera Industries",
+        "headline": "Factory fire halts battery cell line in Malaysia plant",
+        "risk_points": 55
+      },
+      {
+        "supplier": "Nordic Systems",
+        "headline": "Union announces strike vote at harness maker",
+        "risk_points": 22
+      },
+      {
+        "supplier": "Delta Components",
+        "headline": "Port congestion delays container departures by a week",
+        "risk_points": 25
+      },
+      {
+        "supplier": "Orion Industries",
+        "headline": "Supplier wins sustainability award",
+        "risk_points": -5
+      },
+      {
+        "supplier": "Kanto Precision",
+        "headline": "Opens new plant, expands capacity 20%",
+        "risk_points": -8
+      },
+      {
+        "supplier": "Siam Tech",
+        "headline": "Quarterly results beat expectations",
+        "risk_points": -4
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "title": "Pacific Precision: Qualify a backup supplier now and air-freight the gap",
+      "body": "Semiconductors (single), Airbags, Infotainment (single) feeding Line 1, Line 2, Line 3. Lead time forecast 42.7 days vs normal 25.6.",
+      "impact": "Critical"
+    },
+    {
+      "title": "Tera Industries: Qualify a backup supplier now and air-freight the gap",
+      "body": "Batteries (single), Tyres feeding Line 1, Line 3, Line 4. Lead time forecast 25.0 days vs normal 16.9.",
+      "impact": "Critical"
+    },
+    {
+      "title": "Nordic Systems: Raise safety stock to 9 days",
+      "body": "None feeding . Lead time forecast 23.6 days vs normal 16.7.",
+      "impact": "High"
+    },
+    {
+      "title": "Delta Components: Visit supplier and confirm recovery plan",
+      "body": "Paint feeding Line 1. Lead time forecast 26.2 days vs normal 21.7.",
+      "impact": "High"
+    },
+    {
+      "title": "Dual-source single-source parts on Line 3 and Line 2",
+      "body": "7 parts depend on one supplier, starting with Semiconductors, Brake systems, Glass.",
+      "impact": "Structural"
+    }
+  ]
+}

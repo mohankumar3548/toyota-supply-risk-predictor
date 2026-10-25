@@ -1,0 +1,13 @@
+supplier,region,risk_score,lead_time_baseline,lead_time_recent,forecast_4wk,drift_z,on_time_12wk,news_points,parts,lines,urgency,action
+Pacific Precision,Taiwan,100,25.6,35.9,42.7,8.3,0.17,32.0,"Semiconductors (single), Airbags, Infotainment (single)","Line 1, Line 2, Line 3",Critical,Qualify a backup supplier now and air-freight the gap
+Tera Industries,Malaysia,100,16.9,23.8,25.0,6.0,0.17,40.0,"Batteries (single), Tyres","Line 1, Line 3, Line 4",Critical,Qualify a backup supplier now and air-freight the gap
+Nordic Systems,India,71,16.7,20.0,23.6,3.5,0.58,22.0,None,,High,Raise safety stock to 9 days
+Delta Components,Malaysia,67,21.7,24.6,26.2,2.8,0.42,25.0,Paint,Line 1,High,Visit supplier and confirm recovery plan
+Nordic Precision,China,30,7.9,8.2,7.3,0.2,0.83,0.0,Brake systems (single),"Line 2, Line 3, Line 4",Watch,Monitor weekly
+Aki Tech,Mexico,26,9.5,10.7,12.3,1.0,0.83,0.0,Electronics ECU,"Line 2, Line 4",Watch,Monitor weekly
+Siam Tech,USA,25,6.4,6.7,6.2,0.4,0.75,0.0,None,,Watch,Monitor weekly
+Kanto Industries,USA,25,15.9,16.2,16.7,0.3,0.83,0.0,Castings,"Line 1, Line 2, Line 3, Line 4",Watch,Monitor weekly
+Hoshi Works,Mexico,24,12.6,12.8,12.7,0.3,1.0,0.0,"Glass (single), Sensors","Line 1, Line 2, Line 3, Line 4",Watch,Monitor weekly
+Siam Components,USA,22,6.3,6.0,5.5,-0.2,0.83,0.0,Exhaust,Line 4,Watch,Monitor weekly
+Kanto Precision,Malaysia,21,23.4,24.8,25.3,1.0,0.83,0.0,Electronics ECU,"Line 2, Line 4",Watch,Monitor weekly
+Orion Systems,Thailand,20,13.1,13.5,13.9,0.3,1.0,0.0,"Plastics (single), Paint","Line 1, Line 2, Line 3",Watch,Monitor weekly
